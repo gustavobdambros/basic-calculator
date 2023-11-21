@@ -1,0 +1,188 @@
+:root {
+  --green1: #344e41;
+  --green2: #3a5a40;
+  --green3: #588157;
+  --green4: #a3b18a;
+  --green5: #dad7cd;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  font-family: "Poppins", sans-serif;
+}
+
+.home {
+  min-height: 100vw;
+  min-height: 100vh;
+  background-color: var(--green5);
+}
+
+.header {
+  font-size: 1.5em;
+  color: var(--green1);
+}
+
+.title {
+  background-color: var(--green1);
+  padding: 0;
+  width: 100vw;
+  height: 4em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-bottom: 4.5px solid var(--green4);
+}
+
+.title h1 {
+  color: var(--green5);
+}
+
+#informations {
+  width: 50vw;
+  min-height: 35vh;
+  margin: 1em 2em;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  border-bottom: 2px inset var(--green4);
+}
+
+#informations p {
+  font-size: 17px;
+}
+
+#informations ul {
+  margin-top: 10px;
+}
+
+#informations li {
+  list-style: none;
+}
+
+#informations li i {
+  margin-top: 2px;
+  padding: 2px 5px;
+}
+
+#informations-2 {
+  width: 50vw;
+  min-height: 35vh;
+  margin: 1em 2em;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+#informations-2 li {
+  list-style: none;
+}
+
+#informations-2 li i {
+  margin-top: 2px;
+  padding: 5px 5px;
+}
+
+#operation {
+  position: absolute;
+  left: 140vh;
+  bottom: 30vh;
+  background: linear-gradient(var(--green3), var(--green3)) bottom left / 250px
+      2px,
+    linear-gradient(var(--green3), var(--green3)) bottom left / 2px 310px,
+    linear-gradient(var(--green3), var(--green3)) top right / 250px 2px,
+    linear-gradient(var(--green3), var(--green3)) top right / 2px 310px;
+  background-repeat: no-repeat;
+  border-radius: 30px;
+  background-color: var(--green5);
+  width: 18vw;
+  height: 50vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#operation p {
+  color: var(--green1);
+  text-decoration: underline;
+  text-underline-offset: 5px;
+}
+
+#calculator {
+  width: 10vw;
+  height: 2em;
+  text-align: center;
+  border: 2.5px inset var(--green3);
+  border-radius: 3px;
+  font-size: 0.9em;
+  margin-top: 10px;
+}
+
+#firstnum {
+  text-decoration: 1px overline var(--green2);
+  margin-right: 40px;
+  font-size: 15px;
+}
+
+#secondnum {
+  margin-right: 15px;
+  font-size: 15px;
+}
+
+#inputone {
+  width: 10vw;
+  height: 3vh;
+  border: 2px inset var(--green3);
+}
+
+#inputtwo {
+  width: 10vw;
+  height: 3vh;
+  border: 2px inset var(--green3);
+}
+
+#button {
+  width: 10vw;
+  height: 2em;
+  border: 2.5px inset var(--green3);
+  border-radius: 3px;
+  font-size: 0.9em;
+  cursor: pointer;
+}
+
+#button:hover {
+  transform: scale(1.025);
+}
+
+#result {
+  margin-top: 5px;
+  margin-bottom: 5px;
+  height: 9vh;
+  width: 16vw;
+  border-radius: 5px;
+  color: var(--green1);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 20px;
+  text-align: center;
+}
+
+.footer {
+  position: absolute;
+  bottom: 0;
+  width: 100vw;
+  background-color: var(--green2);
+  color: var(--green4);
+  padding: 0.7em 4em;
+  display: flex;
+  justify-content: space-between;
+  border-top: 4.5px solid var(--green4);
+}
+
+.footer a {
+  color: var(--green4);
+  padding: 0 1.5em;
+}

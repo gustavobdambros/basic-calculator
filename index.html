@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400&display=swap"
+      rel="stylesheet"
+    />
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <title>Calculator</title>
+    <link rel="stylesheet" href="/style.css" />
+  </head>
+  <body>
+    <main class="home">
+      <section class="title">
+        <h1>Basic Calculator <i class='bx bx-calculator'></i></h1>
+      </section>
+      <section class="title-2"></section>
+      <section id="informations">
+        <h2 class="header">Objective</h2>
+        <p>This calculator is intended to perform only basic operations:</p>
+        <ul>
+          <li> <i class='bx bx-plus' ></i>Addition</li>
+          <li> <i class='bx bx-minus' ></i>Subtraction</li>
+          <li> <i class='bx bx-code-alt'></i>Division</li>
+          <li> <i class='bx bx-x bx-rotate-270' ></i>Multiplication</li>
+        </ul>
+      </section>
+      <section id="informations-2">
+        <h2 class="header">How to use</h2>
+        <ol>
+          <li> <i class='bx bx-question-mark' ></i>Select the desired operation</li>
+          <li> <i class='bx bxs-edit bx-flip-horizontal' ></i>Type the first number</li>
+          <li> <i class='bx bxs-edit bx-flip-horizontal' ></i>Type the second number</li>
+          <li> <i class='bx bx-pointer' ></i>Click on the "Calculate" button</li>
+          <li> <i class='bx bx-brain'></i>Interpret the result</li>
+        </ol>
+      </section>
+
+      <section id="operation">
+        <h2 class="header">Operation</h4>
+          <select name="calculator" id="calculator">
+            <option value="addition">Addition</option>
+            <option value="subtraction">Subtraction</option>
+            <option value="division">Division</option>
+            <option value="multiplication">Multiplication</option>
+          </select><br>
+      
+        <label id="firstnum">First number <i class='bx bx-subdirectory-left bx-rotate-270' ></i></label>
+        <input id="inputone" type="text" name="inputone"/>
+
+        <label id="secondnum">Second number <i class='bx bx-subdirectory-left bx-rotate-270' ></i></label>
+        <input id="inputtwo" type="text" name="inputtwo"/><br>
+
+        <button id="button" onclick="calculateAndLog()"> <i class='bx bxs-hand-up'></i> Calculate</button><br />
+        <p>The result of operation is: </p>
+
+        <section id="result">
+          <div id="final_result">
+            
+          </div>
+        </section>
+      </section>
+      <footer class="footer">
+        Created by Gustavo Dambros - 2023
+        <nav>
+          <a href="https://www.instagram.com/gustavobdambros/" target="_blank">
+            <i class="bx bxl-instagram"></i>Instagram</a
+          >
+          <a href="https://github.com/gustavobdambros" target="_blank">
+            <i class="bx bxl-github"></i>GitHub</a
+          >
+          <a
+            href="https://www.linkedin.com/in/gustavo-bonamigo-dambros-0749a1222/"
+            target="_blank"
+            ><i class="bx bxl-linkedin"></i> LinkedIn</a
+          >
+        </nav>
+      </footer>
+    </main>
+
+    <script src="./script.js"></script>
+  </body>
+</html>
